@@ -67,7 +67,18 @@ const listFiles = (dirPath: string) => {
   return ret;
 };
 
+/**
+ * ファイルのファイル内容を文字列として取得
+ * @param {string} filePath
+ * @return {string}
+ */
+const fileContent = (filePath: string) => {
+  return fs.readFileSync(filePath, 'utf8')
+};
+
 const target : string | null = process.argv[2];
 const dirPath = target ? path.resolve("", target) : path.resolve("");
 const list = listFiles(dirPath);
+const content = fileContent(list[0]);
+console.log(content);
 console.log(list);
