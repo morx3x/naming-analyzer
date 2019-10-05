@@ -7,7 +7,7 @@ interface FileType {
 import path from 'path';
 import fs from 'fs';
 
-// ファイルタイプの列挙体（のつもり）
+// ファイルタイプの列挙体
 const fileType : FileType = {
   File: 'file',
   Directory: 'directory',
