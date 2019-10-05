@@ -1,0 +1,35 @@
+{
+  "name": "naming-analyzer",
+  "version": "1.0.0",
+  "description": "Visualize names used in source code",
+  "main": "index.js",
+  "bin": {
+    "naming-analyzer": "./bin/naming-analyzer.js"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morx3x/naming-analyzer.git"
+  },
+  "keywords": [
+    "naming",
+    "visualize",
+    "name"
+  ],
+  "author": "Yuki Morota <moro@studio.design> (https://twitter.com/morx3x)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morx3x/naming-analyzer/issues"
+  },
+  "homepage": "https://github.com/morx3x/naming-analyzer#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.11",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
